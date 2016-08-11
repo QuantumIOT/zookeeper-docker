@@ -18,6 +18,6 @@ ADD zk-init.sh /usr/local/bin/
 
 EXPOSE 2181 2888 3888
 
-VOLUME ["/opt/zookeeper/conf", "/tmp/zookeeper"]
+VOLUME ["/opt/zookeeper/conf", "/tmp/zookeeper", "/data/zookeeper"]
 
 ENTRYPOINT ["/usr/local/bin/zk-init.sh"]
