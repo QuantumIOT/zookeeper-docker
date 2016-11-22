@@ -32,4 +32,4 @@ else
     echo "${ZK_ID}" > "/var/lib/zookeeper/myid"
 fi
 
-exec /usr/share/zookeeper/bin/zkServer.sh start-foreground
+exec /etc/zookeeper/bin/zkServer.sh start-foreground
