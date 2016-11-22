@@ -7,8 +7,7 @@ LABEL name="zookeeper" version=$VERSION
 
 RUN apk add --no-cache wget bash \
     && wget -q -O - $MIRROR/zookeeper/zookeeper-$VERSION/zookeeper-$VERSION.tar.gz | tar -xzf - -C /etc \
-    && mv /etc/zookeeper-$VERSION /etc/zookeeper \
-    && rm /etc/zookeeper/conf/zoo.cfg \
+    && mv /etc/zookeeper-$VERSION /etc/zookeeper
 
 WORKDIR /etc/zookeeper
 
